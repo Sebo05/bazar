@@ -1,0 +1,132 @@
+.flexmain {
+    display: flex;
+    margin: 20px 10px;
+    font-size: .7rem;
+}
+
+.menuleft {
+    flex: 0 0 15%;
+    border: 1px solid #ff8900;
+    border-radius: 5px;
+    max-height: 622px;
+    font-size: 1rem;
+}
+
+.nadpismenu__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .5rem;
+    height: 50px;
+    background-color: #ff8900;
+}
+
+
+.kat__container a {
+    text-decoration: none;
+    color: black;
+    transition: color .2s ease;
+}
+
+.kat__container a:hover {
+    color: #ff8900;
+}
+
+.znacky-aut__container,
+.uz-vozidla__container,
+.moto__container {
+    padding: 10px;
+    display: grid;
+    border-radius: 5px;
+    background-color: #ffecbf;
+}
+
+
+.inzeraty__container {
+    margin-left: 15px;
+    padding: 0;
+    width: 100%;
+}
+
+.inzeraty-header {
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: #ff8900;
+}
+
+.zobrazeni__container {
+    fill: black;
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.zobrazeni__container p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.zobrazeni__container svg {
+    margin: 0 5px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+
+.inzeraty-item__container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 25%);
+    grid-gap: 1rem 0;
+}
+
+.inzeraty-item__container-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, auto);
+    grid-gap: 1.5rem 0;
+}
+
+.inzeraty-item__container a {
+    text-decoration: none;
+}
+
+.inzerat {
+    border-radius: 5px;
+    font-size: .7rem;
+    transition: all .2s ease-in-out;
+}
+
+.inzerat:hover {
+    -webkit-box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.19);
+    transform: scale(1.01);
+}
+
+.inzerat a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.inzerat-fotka {
+    height: 200px;
+    width: auto;
+}
+
+.inzerat-fotka img {
+    height: 200px;
+    width: auto;
+}
+
+.inzerat-fotka,
+.inzerat-info,
+.inzerat-tools {
+    margin: 5px;
+}
+
+.text-inzeratu {
+    margin: 5px 10px 5px 0;
+    word-wrap: break-word;
+}

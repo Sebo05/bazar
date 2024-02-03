@@ -32,7 +32,6 @@ if ($stmt === false) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Moje inzeráty</title>
 </head>
 <body>
@@ -51,9 +50,8 @@ if ($stmt === false) {
                         <?php if (!empty($one_auto["obrazek"])): ?>
                             <img src="<?= htmlspecialchars($one_auto["obrazek"]) ?>" alt="Obrázek inzerátu">
                         <?php endif; ?>
+                        <a href="editace-inzeratu.php?id=<?= $one_auto['id'] ?>">Upravit</a>
                         <a href="deleteAuto.php?id=<?= $one_auto['id'] ?>">Odstranit</a>
-<!--                        <a href="editace-inzeratu.php?id=--><?php //= $one_auto['id'] ?><!--">Upravit</a>-->
-                    </li>
                     </li>
                 <?php endforeach; ?>
             </ul>
